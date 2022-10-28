@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff008138;
+  height: 50px;
+}
+
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.logo:hover .LogoOn{
+  display: block;
+  
+}
+
+.logo:hover .LogoImg{opacity: 0;}
+
+.LogoOn {
+  display: none;
+}
+
+.menu li {
+  padding: 0, 10px
+}
+
+
+.rombo {
+  top: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 36.8px solid blue;
+  border-left: 64px solid transparent;
+  border-right: 64px solid #ffff0000;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.rombo h6 {
+  transform: scale(1.5) rotate(0deg);
+  top: 16px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.rombo::before {
+  content: '';
+  position: absolute;
+  top: 36.4px;
+  left: -65px;
+  width: 0;
+  height: 0;
+  border-top: 112px solid dodgerblue;
+  border-left: 65px solid transparent;
+  border-right: 65px solid #ffff0000;
+  z-index: -1;
+}
+
+
+.Runo {
+  border-color: transparent transparent yellow transparent;
+}
+
+.Runo::after {
+  border-color: transparent transparent yellow transparent;
+}
+
+.Runo:hover::before {display: none;}
+
+.Rdos {
+  border-color: transparent transparent red transparent;
+  transform: rotate(120deg);
+  transform-origin: top;
+}
+
+
+.Rdos::before {
+
+  border-color: red transparent transparent transparent;
+}
+
+.Rdos::after {
+
+  border-color: transparent transparent purple transparent;
+
+  transform: rotate(120deg);
+}
+
+.Rdos:hover {
+  border-color: #11d9ed;
+  z-index: 1;
+  transform: rotate(180deg);
+  top: 60px;
+}
+
+.Rdos:hover::before {
+
+  top: 0;
+
+  border-color: red;
+
+  z-index: 1;
+
+  border-top: 134px solid red;
+
+  border-left: 253px solid red;
+
+  border-right: 65px solid red;
+}
+
+.Rtres {
+  border-color: transparent transparent dodgerblue transparent;
+  transform: rotate(240deg);
+  transform-origin: top;
+}
+
+.Triangulo {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 77.4px solid purple;
+  border-left: 128.5px solid transparent;
+  border-right: 128.5px solid #ffff0000;
+  transform-origin: initial;
+  top: -151px;
+  left: -64px;
+}
+
+.TriUno {
+  transform: rotate(120deg);
+  top: 18px;
+  left: 33px;
+  border-color: transparent transparent green;
+}
+
+.TriDos {
+  transform: rotate(240deg);
+  left: -162px;
+  top: 18px;
+  border-color: transparent transparent orange;
+}
+
+.LogoOn {
+
+position: relative;
+
+transform-origin: center;
+
+top: 222px;
+
+left: 51px;
+
+right: auto;
+
+transform: scale(1.2) translate(-100%, -100%)rotate(180deg);
+}
+
+.Cont {
+  position: absolute;
+  top: 44px;
+}
+
+.ImgFig {
+
+  z-index: 2;
+
+  left: -32px;
+}
+
+.ImgGir {
+  transform: rotate(180deg);
+  top: 7px;
+  z-index: 2;
+}
+
+.Rdos p {
+  display: none;
+}
+
+.Rdos:hover p {
+  position: relative;
+  top: 25px;
+  left: 131px;
+  display: block;
+  z-index: 1;
+}
+
+.Rdos:hover h6 {
+  top: 12px;
+  left: 42px;
+}
+
+.Rtres:hover {
+  border-color: #11d9ed;
+  z-index: 1;
+  transform: rotate(180deg);
+  top: 60px;
+  left: 189px;
+}
+
+.Rtres:hover::before {
+
+  top: 0;
+
+  border-color: dodgerblue;
+
+  z-index: 1;
+
+  border-top: 134px solid dodgerblue;
+
+  border-left: 253px solid dodgerblue;
+
+  border-right: 65px solid dodgerblue;
+}
+
+.Rtres p {
+  display: none;
+}
+
+.Rtres:hover p {
+  position: relative;
+  top: 25px;
+  left: 131px;
+  display: block;
+  z-index: 1;
+}
+
+.Rtres:hover h6 {
+  top: 12px;
+  left: 42px;
+}
+
+.ImgYoYo {
+  z-index: 2;
+}
+
+
+.Runo:hover {
+  transform: rotate(180deg);
+  background-color: yellow;
+  top: 0px;
+  left: auto;
+  z-index: 1;
+  width: auto;
+  height: 112px;
+}
+
+.Runo p {
+  display: none;
+}
+
+.Runo:hover p {
+  display: block;
+  position: relative;
+  top: 28px;
+  left: 45px;
+  width: 148px;
+  z-index: 1;
+}
+
+.Runo:hover h6 {
+  top: 34px;
+  left: -11px;
+}
+
+.ImgGir {
+  z-index: 1;
+}
+
+.Runo:hover .ImgGir {transform: rotate(0deg);left: -25px;top: 31px;}
+
+.Runo:hover .ImgGir > img {
+  width: 60px;
+}
+
+.rombo Runo:hover {}
+
+
+
+.Runo::before {
+    border-color: yellow transparent transparent;
+}
+
+.logo {
+  display: flex;
+}

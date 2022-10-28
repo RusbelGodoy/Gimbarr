@@ -1,0 +1,26 @@
+.ContFigura {
+    display: flex;
+}
+.ImgAncl {
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: brown;
+}
+.FonDImgAncl {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    BORDER: 10PX outset;
+    border-radius: 50%;
+    border-top: 10px outset red;
+    border-bottom: 10px outset red;
+}
